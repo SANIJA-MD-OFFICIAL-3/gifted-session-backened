@@ -2,14 +2,14 @@ require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const bcrypt = require('bcryptjs');
+// const bcrypt = require('bcryptjs');
 const Creds = require('./credsModel');
 const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Configuration
+// Config
 const ALLOWED_API_KEYS = [
   'example_api@1',
   'example_api@2',
@@ -58,9 +58,8 @@ mongoose.connect(process.env.MONGODB_URI)
   .then(() => console.log('Connected to MongoDB'))
   .catch(err => console.error('MongoDB connection error:', err));
 
-// Logout endpoint
 app.post('/api/logout', (req, res) => {
-  // In a real application, you might want to invalidate tokens here
+  // I'm not using this for now since there isn't any user auths
   res.json({ success: true, message: 'Logged out successfully' });
 });
 
