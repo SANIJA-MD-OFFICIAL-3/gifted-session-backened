@@ -13,7 +13,7 @@ const credsSchema = new mongoose.Schema({
   createdAt: {
     type: Date,
     default: Date.now,
-    expires: '90d'
+    expires: '90d' // Auto Delete Sessions After 3 Months from Date of Creation............
   }
 });
 
