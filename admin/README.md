@@ -7,4 +7,4 @@
 
 - Deploy To your Favourite Hosting Platform. Here is Sample **[Deployed Output](https://creds.giftedtech.web.id)**
 
-- Use as Backened Api in your Session Generator as in **[This Mie Here](https://github.com/mauricegift/gifted-session)**
+- Use as Backened Api in your Session Generator as in **[This Mine Here](https://github.com/mauricegift/gifted-session)**
