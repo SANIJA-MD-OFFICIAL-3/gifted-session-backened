@@ -3,7 +3,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 // const bcrypt = require('bcryptjs');
-const Creds = require('./credsModel');
+const Creds = require('./models/credsModel');
 const path = require('path');
 
 const app = express();
