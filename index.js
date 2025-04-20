@@ -11,14 +11,14 @@ const PORT = process.env.PORT || 3000;
 
 // Config
 const ALLOWED_API_KEYS = [
-  'example_api@1',
-  'example_api@2',
-  'example_api@3'
+  '', // example_apikey@1
+  '', // example_apikey@2
+  '' // example_apikey@3
 ];
 
 const ADMIN_CREDENTIALS = {
-  username: 'example_admi@johndoe',
-  password: 'example_admin@123',
+  username: process.env.ADMIN_USER, 
+  password: process.env.ADMIN_PASS, 
 };
 
 app.use(cors());
@@ -214,6 +214,7 @@ app.delete('/admin/creds.php/:id', adminAuth, async (req, res) => {
   }
 });
 
+// Don't worry even the path app.get('/', will redirect to admin page
 app.get('/admin', (req, res) => {
   res.sendFile(path.join(__dirname, 'admin', 'admin.html'));
 });
