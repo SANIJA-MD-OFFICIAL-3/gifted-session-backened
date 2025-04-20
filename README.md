@@ -1,9 +1,9 @@
 ### Gifted-Session-Backened
 
 
-- Create Account on MongoDB, create Cluster, Create Project And Add DB url
+- Create Account on MongoDB, create Cluster, Create Project And Add DB uri
 
-- You Might Add Your Server IP Address for mongo or Allow Access for Anywhere(But Keep Your DB Crreedentials Very Secure
+- You Might Add Your Server IP Address for mongo or Allow Access for Anywhere(But Keep Your DB Credentials Very Secure
 
 - Deploy To your Favourite Hosting Platform. Here is Sample **[Deployed Output](https://creds.giftedtech.web.id)**
 
