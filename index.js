@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3000;
 
 // Config
 const ALLOWED_API_KEYS = [
-  '', // example_apikey@1
+  'apikey@1', // example_apikey@1
   '', // example_apikey@2
   '' // example_apikey@3
 ];
@@ -72,7 +72,7 @@ app.post('/api/uploadCreds.php', apiKeyAuth, async (req, res) => {
 
     if (!credsId.startsWith('Gifted~')) {
       return res.status(400).json({ 
-        error: 'Invalid session ID Format - Must Start with "Gifted~"' 
+        error: 'Invalid session ID Format - Must Start with "SANIJA-MD="' 
       });
     }
 
@@ -114,7 +114,7 @@ app.get('/api/downloadCreds.php/:credsId', apiKeyAuth, async (req, res) => {
     
     if (!credsId.startsWith('Gifted~')) {
       return res.status(400).json({ 
-        error: 'Invalid Session ID Format - Must Start with "Gifted~"' 
+        error: 'Invalid Session ID Format - Must Start with "SANIJA-MD="' 
       });
     }
 
